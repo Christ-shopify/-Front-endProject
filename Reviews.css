@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkblue;
+  height: 500px;
+  width: 200px;
+  color: white;
+  margin-top: 200px;
+}
+
+.main-box {
+  background-color: aqua;
+}
+.title {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 60px;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  clip-path: circle(40%);
+}
+
+#author,
+#job,
+p {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.contain-buton,
+button,
+i {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.contain-buton,
+button,
+i {
+  background-color: transparent;
+}
+
+.contain-buton button {
+  height: 20px;
+  width: 50px;
+}
+.random-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 470px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  border: 3px solid #6875b6e3;
+  padding: 10px 50px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.random-btn:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px lightblue, 0 0 50px purple;
+  }
+}

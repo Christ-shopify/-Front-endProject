@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      .inp {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .inp input {
+        border: 3px solid darkorange;
+        border-radius: 24px 4px;
+      }
+      #btn {
+        height: 45px;
+        width: 100px;
+        background-color: darkorange;
+        cursor: pointer;
+      }
+
+      input {
+        height: 45px;
+        width: 250px;
+        font-family: "Courier New", Courier, monospace;
+        text-align: left;
+
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inp">
+      <form>
+        <input type="email" name="Email" placeholder="Enter your Email" />
+        <input type="submit" name="button" id="btn" />
+      </form>
+      <button id="btns">back</button>
+    </div>
+    <script>
+      const btn = document.querySelector("#btn");
+
+      btn.addEventListener("click", function () {
+        confirm("thanks for entering your email");
+      });
+
+      // take you backe to the previous page
+      const btns = document.querySelector("#btns");
+      btns.addEventListener("click", function () {
+        history.back();
+      });
+    </script>
+  </body>
+</html>

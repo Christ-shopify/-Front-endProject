@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .footer-signup div {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        position: relative;
+      }
+
+      .footer-signup h3 {
+        margin-left: 205px;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+
+      #footer input {
+        width: 450px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin-left: 50px;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      #footer i {
+        position: absolute;
+        margin-left: 480px;
+        color: red;
+      }
+      input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer-signup">
+      <h3>Don't miss out!!</h3>
+      <div id="footer">
+        <i class="fa fa-arrow-right" onclick="myfunction(this)"></i>
+        <input
+          id="email "
+          name="email"
+          type="email"
+          placeholder="Email@example.com"
+        />
+      </div>
+    </div>
+
+    <script>
+      function myfunction() {
+        const dat = document.getElementsById("email").value;
+        if (dat.length > 19) {
+          alert("your email is too long");
+        }
+      }
+    </script>
+  </body>
+</html>

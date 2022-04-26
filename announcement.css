@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bar {
+  box-sizing: border-box;
+  width: 1041px;
+  height: 50px;
+  background-color: pink;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+.name p {
+  color: aliceblue;
+  font-weight: bold;
+}
