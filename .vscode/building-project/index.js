@@ -1,4 +1,3 @@
-
 const container = [
     {
     id:1,
@@ -12,8 +11,13 @@ const container = [
     },
 ];
 
-const inp = document.getElementById('TText');
-const inps = document.getElementById('BText');
+const inps = document.getElementById('top');
+// const inps = document.getElementById('input');
+const log = document.getElementById('Top');
+
+const inp =  document.getElementById('bot');
+const logged = document.getElementById('Bot')
+
 const img  = document.getElementById('img');
 
 const btn = document.querySelector(".btn");
@@ -28,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function(){
 function ShowMeme(){
     const item = container[currentItem];
 
-    //getting items from Array
+//     //getting items from Array
     img.src = item.img;
 }
 
@@ -39,3 +43,16 @@ btn.addEventListener('click', function() {
   currentItem =  Math.floor(Math.random() * container.length);
   ShowMeme(currentItem);
 });
+
+inps.addEventListener('change', function(e){
+    log.textContent = e.target.value;
+});
+
+inp.addEventListener('change', function(e){
+    logged.textContent = e.target.value;
+})
+
+
+//setting top Text
+
+
