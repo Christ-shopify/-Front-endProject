@@ -10,6 +10,7 @@ justify-content: center;
 }
 
 .container{
+    margin-top: 138px;
 background-color: white;
 width: 350px;
 height: 400px;
@@ -22,6 +23,9 @@ border-radius: 25px;
     height: 60px;
     display: flex;
     justify-content: center;
+    border-top: 1px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .img{
@@ -32,19 +36,24 @@ border-radius: 25px;
 
 #Top{
     position: absolute; 
-    top: 107px; 
-    left: 452px;
+    top: 241px;
+    left: 670px;
     color: white;
 }
 #Bot{
     color: white;
     position: absolute;
-    top: 253px;
-    bottom: 0;
-    left: 451px;
+    top: 371px;
+    left: 675px;
 }
 
 .btn{
     background-color: purple;
     border: 1px solid;
+}
+
+input{
+    border: 1px solid; 
+    outline: none;
+    margin-left: 2px;
 }
